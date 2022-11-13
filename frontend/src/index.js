@@ -5,12 +5,12 @@ import { store } from './app/store'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import './index.css'
-import { disableReactDevtools } from '@fvilers/disable-react-devtools'
+import { disableReactDevTools } from '@fvilers/disable-react-devtools'
 
 const container = document.getElementById('root')
 const root = createRoot(container)
 
-if (process.env.NODE_ENV === 'production') disableReactDevtools()
+if (process.env.NODE_ENV === 'production') disableReactDevTools()
 
 root.render(
   <React.StrictMode>
