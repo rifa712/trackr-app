@@ -66,13 +66,13 @@ const SignUp = () => {
       // await setDoc(doc(db, 'users', user.uid), formDataCopy)
       onLoadingSignUp()
       setTimeout(() => {
+        dispatch(setLogin())
         navigate('/')
         onLoadingSignUp()
-        dispatch(setLogin())
         toast.success('Sign Up Succesfuly')
       }, [1000])
 
-      navigate('/')
+      // navigate('/')
     } catch (error) {
       toast.error('Something went wrong with registrarion')
     }
@@ -86,7 +86,7 @@ const SignUp = () => {
   return (
     <>
       <div className='w-full mt-4'>
-        <h1 className='text-xl text-center md:text-3xl font-semibold mb-2'>
+        <h1 className='text-xl text-center md:text-3xl font-semibold mb-2 py-2'>
           Sign Up a New User
         </h1>
 
@@ -119,9 +119,9 @@ const SignUp = () => {
               <label htmlFor='password' className={labelStyle}>
                 Password
               </label>
-              <div className='flex justify-between'>
+              <div className='w-full flex flex-row items-center'>
                 <input
-                  className={inputStyle + 'w-full'}
+                  className={inputStyle}
                   type={showPassword ? 'text' : 'password'}
                   id='password'
                   onChange={onChange}

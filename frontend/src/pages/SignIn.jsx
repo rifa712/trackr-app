@@ -63,7 +63,7 @@ const SignIn = () => {
 
   return (
     <div className='w-full mt-4'>
-      <h1 className='text-xl text-center md:text-3xl font-semibold mb-2'>
+      <h1 className='text-xl text-center md:text-3xl font-semibold mb-2 py-2'>
         Sign In
       </h1>
 
@@ -120,16 +120,21 @@ const SignIn = () => {
         {/* END LEFT */}
 
         {/* RIGHT */}
-        {/* <div className='w-12/12 sm:w-5/12 mt-4  p-4'>
+        <div className='w-12/12 sm:w-5/12 mt-4  p-4'>
           <div className='w-full min-h-max flex flex-col items-center justify-center '>
             <h1 className='text-xl text-center md:text-xl mb-2'>
-              Sign In with
+              Test Account (dummy) :
             </h1>
-            <button className={labelStyle}>
+            <p>Email : dummytrackr@gmail.com</p>
+            <p>Password : 123456</p>
+            {/* <h1 className='text-xl text-center md:text-xl mb-2'>
+              Sign In with
+            </h1> */}
+            {/* <button className={labelStyle}>
               <img className='w-20 h-20' src={googleIcon} alt='google' />
-            </button>
+            </button> */}
           </div>
-        </div> */}
+        </div>
         {/* END RIGHT */}
       </div>
     </div>
